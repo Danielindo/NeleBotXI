@@ -87,7 +87,7 @@ $configs = [
 		# 2. Plugins list						(Optional)	[Array of file name(text) => status(bool)]
 		'plugins'					=> [
 			'commands.php'				=> true,
-			'management.php'				=> true
+			'management.php'				=> false
 		],
 		# 2. Default requests response			(Optional)	[Bool]
 		'response'					=> true,
