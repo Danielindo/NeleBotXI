@@ -307,6 +307,7 @@ class Variables
 		$this->author_signature = $Message['author_signature'];
 		$this->text = $Message['text'];
 		$this->htmltext = messageToHtmlConverter($Message['text'], $Message['entities']);
+		$this->htmlcaption = messageToHtmlConverter($Message['caption'], $Message['caption_entities']);
 		if (empty($this->configs['commands_alias'])) $this->configs['commands_alias'] = ['/'];
 		if (in_array($this->text[0], $this->configs['commands_alias'])) {
 			if (strpos($this->text, '@')) {
