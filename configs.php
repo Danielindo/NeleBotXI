@@ -19,11 +19,11 @@ $configs = [
 		# 7. Protect contents					(Optional)	[Bool]
 		'protect_content'			=> false,
 		# 8. Commands alias						(Optional)	[Array of Text(Only 1 character)]
-		'commands_alias'			=> ['/', '!', '.'],
+		'commands_alias'			=> ['/', '!'],
 	
 	# 2. Logging configs
 		# 1. Set the chat ID for Bot logs		(Optional)	[Number]
-		'log_chat'					=> 5497858457,
+		'log_chat'					=> 244432022,
 		# 2. Choose the errors to log			(Optional)	[Array of Number => bool]
 		'log_types'					=> [
 			# https://www.php.net/manual/en/errorfunc.constants.php
@@ -31,9 +31,9 @@ $configs = [
 			E_PARSE						=> true,
 			E_CORE_ERROR				=> true,
 			E_COMPILE_ERROR				=> true,
-			E_USER_WARNING				=> true,
-			E_USER_NOTICE				=> true,
-			E_RECOVERABLE_ERROR			=> true
+			E_USER_WARNING				=> false,
+			E_USER_NOTICE				=> false,
+			E_RECOVERABLE_ERROR			=> false
 		],
 	
 	# 3. Databases
@@ -86,8 +86,8 @@ $configs = [
 		],
 		# 2. Plugins list						(Optional)	[Array of file name(text) => status(bool)]
 		'plugins'					=> [
-			'commands.php'				=> true,
-			'management.php'				=> false
+			'management.php'			=> true,
+			'commands.php'				=> true
 		],
 		# 2. Default requests response			(Optional)	[Bool]
 		'response'					=> true,
